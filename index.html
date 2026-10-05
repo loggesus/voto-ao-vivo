@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#101216" />
+    <title>Voto ao Vivo · Segundo turno</title>
+    <meta name="description" content="Acompanhe o segundo turno presidencial com mapa e dados oficiais do TSE." />
+    <link rel="preload" href="./fonts/geist.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      // Apply the saved or system theme before first paint (mirrors src/hooks/useTheme.js).
+      (function () {
+        var theme = null;
+        try { theme = localStorage.getItem('apuracao:tema'); } catch (error) {}
+        if (theme !== 'light' && theme !== 'dark') theme = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-DVEbvz4S.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D2XNfM8q.css">
+  </head>
+  <body>
+    <div id="app"><p class="boot-loading">Carregando o mapa…</p></div>
+  </body>
+</html>
